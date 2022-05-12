@@ -1,0 +1,9 @@
+{
+  "short_name": "Forbidden Gods Mod GUI",
+  "name": "Shadows of Forbidden Gods Mod GUI",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
