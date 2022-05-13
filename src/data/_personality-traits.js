@@ -1,4 +1,4 @@
-const personalityTags = [
+const personalityTraits = [
   {
     name: "Combat",
     description: 'TODO: Add personality description here.'
