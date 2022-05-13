@@ -10,7 +10,7 @@ export const eventTypes = {
     filePrefix: "midch_"
   },
   {
-    name: "Death",
+    name: "DEATH",
     description: "Triggers when a character dies",
     filePrefix: "death_"
   },
