@@ -134,10 +134,50 @@ const effects = [
   },
   {
     name: 'ADD_MODIFIER_DEATH',
-    description: 'Adds death modifier to a LOCATION shadow. Can be negative to lower.',
+    description: 'Adds death modifier to a LOCATION. Can be negative to lower.',
     recommended: 'Number between -200 and 200'
   },
-  // TODO: add modifiers for madness etc
+  {
+    name: 'ADD_MODIFIER_PLAGUE',
+    description: 'Adds plague modifier to a LOCATION. Can be negative to lower.',
+    recommended: 'Number between -200 and 200'
+  },
+  {
+    name: 'ADD_MODIFIER_DEVASTATION',
+    description: 'Adds devastation modifier to a LOCATION. Can be negative to lower.',
+    recommended: 'Number between -200 and 200'
+  },
+  {
+    name: 'ADD_MODIFIER_POLITICAL_AGITATION',
+    description: 'Adds political agitation modifier to a LOCATION. Can be negative to lower.',
+    recommended: 'Number between -200 and 200'
+  },
+  {
+    name: 'ADD_MODIFIER_POLITICAL_INSTABILITY',
+    description: 'Adds political instability modifier to a LOCATION. Can be negative to lower.',
+    recommended: 'Number between -200 and 200'
+  },
+  {
+    name: 'ADD_MODIFIER_WELL_OF_SHADOWS',
+    description: 'Adds well of shadows modifier to a LOCATION. Can be negative to lower.',
+    recommended: 'Number between -200 and 200'
+  },
+  {
+    name: 'ADD_MODIFIER_HUNGER',
+    description: 'Adds hunger modifier to a LOCATION. Can be negative to lower.',
+    recommended: 'Number between -200 and 200'
+  },
+  {
+    name: 'ADD_MODIFIER_MADNESS',
+    description: 'Adds madness modifier to a LOCATION. Can be negative to lower.',
+    recommended: 'Number between -200 and 200'
+  },
+  {
+    name: 'ADD_MODIFIER_UNREST',
+    description: 'Adds unrest modifier to a LOCATION. Can be negative to lower.',
+    recommended: 'Number between -200 and 200'
+  },
+  // TODO: add other modifiers
   {
     name: 'TEMPORARY_MIGHT',
     description: 'Adds temporary MIGHT to a PERSON. Can be negative to lower.',
@@ -237,15 +277,47 @@ const effects = [
     description: 'Changes a LOCATION plague modifier to a certain level.',
     recommended: 'Number between 0 and 200'
   },
+  {
+    name: 'CHANGE_DEVASTATION',
+    description: 'Changes a LOCATION devastation modifier to a certain level.',
+    recommended: 'Number between 0 and 200'
+  },
+  {
+    name: 'CHANGE_POLITICAL_AGITATION',
+    description: 'Changes a LOCATION political agitation modifier to a certain level.',
+    recommended: 'Number between 0 and 200'
+  },
+  {
+    name: 'CHANGE_POLITICAL_INSTABILITY',
+    description: 'Changes a LOCATION political instability modifier to a certain level.',
+    recommended: 'Number between 0 and 200'
+  },
+  {
+    name: 'CHANGE_WELL_OF_SHADOWS',
+    description: 'Changes a LOCATION well of shadows modifier to a certain level.',
+    recommended: 'Number between 0 and 200'
+  },
+  {
+    name: 'CHANGE_DEATH',
+    description: 'Changes a LOCATION death modifier to a certain level.',
+    recommended: 'Number between 0 and 200'
+  },
+  {
+    name: 'CHANGE_HUNGER',
+    description: 'Changes a LOCATION hunger modifier to a certain level.',
+    recommended: 'Number between 0 and 200'
+  },
+  {
+    name: 'CHANGE_MADNESS',
+    description: 'Changes a LOCATION madness modifier to a certain level.',
+    recommended: 'Number between 0 and 200'
+  },
+  {
+    name: 'CHANGE_UNREST',
+    description: 'Changes a LOCATION unrest modifier to a certain level.',
+    recommended: 'Number between 0 and 200'
+  },
   // TODO: Add other modifiers
-  //   { "command": "CHANGE_PLAGUE", "argument": "50" }
-  // { "command": "CHANGE_DEVASTATION", "argument": "50" }
-  // { "command": "CHANGE_POLITICAL_AGITATION", "argument": "50" }
-  // { "command": "CHANGE_POLITICAL_INSTABILITY", "argument": "50" }
-  // { "command": "CHANGE_WELL_OF_SHADOWS", "argument": "50" }
-  // { "command": "CHANGE_DEATH", "argument": "50" }
-  // { "command": "CHANGE_HUNGER", "argument": "50" }
-  // { "command": "CHANGE_MADNESS", "argument": "50" }
   {
     name: 'CREATE_HERO_WARRIOR',
     description: 'Creates a new HERO at LOCATION.',
