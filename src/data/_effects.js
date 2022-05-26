@@ -483,11 +483,6 @@ const effects = [
     recommended: 'Number between 0 and 200'
   },
   {
-    name: 'CHANGE_WARD',
-    description: 'Changes a LOCATION ward modifier to a certain level.',
-    recommended: 'Number between 0 and 200'
-  },
-  {
     name: 'CHANGE_ARCANE_FORTRESS',
     description: 'Changes a LOCATION arcane fortress modifier to a certain level.',
     recommended: 'Number between 0 and 200'
