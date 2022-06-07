@@ -1,4 +1,4 @@
-const keywordReplacements = [
+export const keywordReplacements = [
   {
     name: "%LOCATION_NAME",
     description: "The location's name if not a WORLD event"

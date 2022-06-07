@@ -1,4 +1,4 @@
-const conditionals = [
+export const conditionals = [
   {
     name: "turn",
     comparable: true,
@@ -272,14 +272,6 @@ const conditionals = [
     description: 'Compares the profile of a UNIT to a number',
     eventTypes: ['MIDCHALLENGE', 'PERSON', 'UNIT', 'DEATH', 'P2P', 'INERT', 'LOCATION']
   },
-  // {
-  //   name: "has_minions",
-  //   longCode: '((minion_one_special_value = 1888423) | (minion_two_special_value = 1888423) | (minion_three_special_value = 1888423))',
-  //   comparable: false,
-  //   boolean: true,
-  //   description: 'Checks whether the PERSON has any minions',
-  //   eventTypes: ['MIDCHALLENGE', 'PERSON', 'UNIT', 'DEATH', 'P2P', 'INERT', 'LOCATION']
-  // },
   {
     name: "minion_one_special_value",
     comparable: true,

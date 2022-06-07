@@ -1,4 +1,4 @@
-const effects = [
+export const effects = [
   {
     name: 'SHOW_EVENT',
     description: 'Show another event of the type INERT',

@@ -1,4 +1,4 @@
-export const eventTypes = {
+export const eventTypes = [
   {
     name: "DEATH",
     description: "Triggers when a character dies",
@@ -49,4 +49,4 @@ export const eventTypes = {
     description: "Triggers when a condition is met for a world event. Only the map is accessible.",
     filePrefix: "world_"
   }
-}
+]
