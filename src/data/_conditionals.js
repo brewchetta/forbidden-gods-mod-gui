@@ -252,13 +252,6 @@ export const conditionals = [
     eventTypes: ['MIDCHALLENGE', 'PERSON', 'UNIT', 'DEATH', 'P2P', 'INERT', 'LOCATION']
   },
   {
-    name: "settlement_being_razed",
-    comparable: false,
-    boolean: true,
-    description: 'Checks whether the LOCATION is currently being razed',
-    eventTypes: ['MIDCHALLENGE', 'PERSON', 'UNIT', 'DEATH', 'P2P', 'INERT', 'LOCATION']
-  },
-  {
     name: "menace",
     comparable: true,
     boolean: false,

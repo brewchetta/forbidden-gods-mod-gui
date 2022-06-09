@@ -6,6 +6,10 @@ export function toNunchukCase(string) {
   return string.toLowerCase().replace(/[\s_]+/g, "-")
 }
 
+export function toSnakeCase(string) {
+  return string.toLowerCase().replace(/[\s-]+/g, "_")
+}
+
 export function toSpaceCase(string) {
   return string.replace(/[_-]/g, " ")
 }
