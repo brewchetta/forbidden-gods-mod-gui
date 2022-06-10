@@ -5,6 +5,7 @@ import { toSnakeCase } from 'utils/string'
 // COMPONENTS //
 import MainAttributes from './EventCreator__MainAttributes'
 import ConditionsSelect from './EventCreator__ConditionsSelect'
+import ChoiceCreator from './EventCreator__ChoiceCreator'
 // CONTEXT //
 import { useModContext } from 'context/ModContext'
 
@@ -26,6 +27,8 @@ function EventCreator() {
     probability: 0.5,
   })
 
+  const [choices, setChoices] = useState([])
+
   // EVENTS //
 
   const handleChangeModName = e => {
@@ -40,6 +43,9 @@ function EventCreator() {
     const newConditionals = eventData.conditionals + `${ eventData.conditionals.length ? ' & ' : '' }(${conditional.name}${conditional.comparable ? ' = ???' : ''})`
     setEventData(prev => ({...prev, conditionals: newConditionals}))
   }
+
+  const handleAddChoice = choice => setChoices(prev => ([...prev, choice]))
+  const handleRemoveChoice = choice => setChoices(prev => prev.filter(c => c !== choice))
 
   // RENDER //
 
@@ -61,6 +67,12 @@ function EventCreator() {
         conditionals={eventData.conditionals}
       />
 
+      <ChoiceCreator
+        choices={choices}
+        handleAddChoice={handleAddChoice}
+        handleRemoveChoice={handleRemoveChoice}
+      />
+
       <br/>
 
       <code>
@@ -75,17 +87,10 @@ export default EventCreator
 
 // what this needs:
 
-  // input to retitle event name etc
-
   // EVENT ATTRIBUTES are:
 
     // id - text prefixed by mod name
     // name - text
     // description - textarea with ability to insert things like pronouns, identifiers
     // image - filename or text - able to upload file to see image
-    // imgCredit - required text
-    // modCredit - username or text
-    // type - dropdown for event types
-    // conditional - conditional builder component
-    // probability - number between 0 and 1
     // choices - should be its own component area
